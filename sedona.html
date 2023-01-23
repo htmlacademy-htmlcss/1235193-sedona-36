@@ -8,7 +8,9 @@
 </head>
 <body>
   <header class="page-header">
-    <img class="header-logo" src="" alt="Логотип шапки">
+    <a class="header-logo-link" href="https://htmlacademy.ru/">
+      <img class="header-logo-icon" src="#" alt="Логотип шапки">
+  </a>
     <nav class="nav">
       <ul class="nav-list">
        <li class="nav-item">
@@ -37,8 +39,8 @@
   </header>
 <main class="page-main">
   <h1 class="visually-hidden">Город Седона</h1>
-  <img class="main-logo" src="" alt="Главный логотип">
-<section slass="hero">
+  <img class="main-logo" src="#" alt="Главный логотип">
+<section class="hero">
 <h2 class="hero-title">Седона — небольшой городок в Аризоне,
   заслуживающий большего!</h2>
 <p class="hero-descr">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -48,7 +50,7 @@
 <p class="hero-list-descr">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
   </li>
   <li class="hero-item">
-<img class="hero-list-image" src="" alt="Фото городка">
+<img class="hero-list-image" src="#" alt="Фото городка">
   </li>
   <li class="hero-item">
     <h3 class="hero-list-title">Небольшая
@@ -66,7 +68,7 @@
     <p class="hero-list-descr">Большинство едет в Гранд Каньон и толпится там</p>
   </li>
   <li class="hero-item">
-    <img class="hero-list-image" src="" alt="Фото пейзажа">
+    <img class="hero-list-image" src="#" alt="Фото пейзажа">
   </li>
   <li class="hero-item">
     <h3 class="hero-list-title">Там есть
@@ -100,10 +102,42 @@
   <p class="offer-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   <button class="offer-button" type="button">Поиск гостиницы в Седоне</button>
 </section>
-<section></section>
+<section class="subscribe">
+  <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+  <p class="subscribe-descr">Только полезная информация и никакого спама, честное бойскаутское!</p>
+  <form class="subscribe-form" action="http://echo.htmlacademy.com" method="post">
+    <label class="visually-hidden">
+      <input type="text" name="email" placeholder="email@example.com">
+    </label>
+<button class="subscribe-button" type="submit" value="Подписаться"></button>
+  </form>
+</section>
 </main>
 <footer class="page-footer">
+  <ul class="footer-list">
 
+    <li class="footer-social-item">
+      <a class="button" href="https://vk.com/htmlacademy">
+        <span class="visually-hidden">ВКонтакте</span>
+      </a>
+     </li>
+     <li class="footer-social-item">
+      <a class="button" href="https://t.me/htmlacademy ">
+        <span class="visually-hidden">Телеграм</span>
+      </a>
+     </li>
+     <li class="footer-social-item">
+      <a class="button" href="https://www.youtube.com/user/htmlacademy.ru">
+        <span class="visually-hidden">Ютуб</span>
+      </a>
+     </li>
+  </ul>
+<address class="footer-contacts">
+<a class="footer-contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+</address>
+<a class="footer-copywright" href="https://htmlacademy.ru/">
+  <img class="footer-icon" src="#" alt="Подпись html-академии">
+</a>
 </footer>
 </body>
 </html>
