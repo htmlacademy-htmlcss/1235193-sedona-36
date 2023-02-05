@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+  background-color: #fff;
+}
+.page-header {
+color:#000;
+background: #fff;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  background-repeat:no-repeat;
+  background-position: left;
+}
+.search {
+  background-image: url("../images/header-nav-search.svg");
+}
+.like {
+  background-image: url("../images/header-nav-like.svg");
+}
+
+.button {
+  padding: 8px 34px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  background-color: #756157;
+}
+
+.main-logo {
+display:block;
+padding-top: 51.4px;
+padding-bottom: 82.23px;
+}
+
+.div-main-logo {
+background-image: url("../images/index-hero-background.jpg");
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-color: #333;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 0;
+}
+.hero-container {
+  margin-bottom: 21px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+.hero-list {
+  list-style: none;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:#000;
+  margin-bottom: 25px;
+}
+
+.hero-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+}
+.hero-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color:#333;
+}
+.hero-item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#333;
+}
+
+.hero-item:first-child h3, .hero-item:last-child h3 {
+  color:#fff;
+}
+.hero-item:first-child p, .hero-item:last-child p {
+  color:#fff;
+}
+
+.hero-list-image {
+  display: block;
+}
+
+.advices-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color:#000;
+  text-align: center;
+}
+.advices-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#333;
+  text-align: center;
+}
+.advices-list {
+  list-style: none;
+}
+.advices-item {
+  text-align: center;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+.housing {
+  background-image: url("../images/index-advices-1.svg");
+}
+.food {
+  background-image: url("../images/index-advices-2.svg");
+}
+.souvenirs {
+  background-image: url("../images/index-advices-3.svg");
+}
+.advices-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color:#000;
+  text-transform: uppercase;
+ }
+.advices-item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color:#333;
+}
+.offer {
+  text-align: center;
+}
+.offer-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color:#000;
+  text-transform: uppercase;
+}
+.offer-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#333;
+}
+.subscribe {
+  background-color: #333;
+  background-image: url("../images/index-subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  text-align: center;
+}
+
+.subscribe-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color:#fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscribe-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color:#fff;
+  margin-bottom: 54px;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-social-link {
+  background-repeat:no-repeat;
+  background-position: left;
+}
+.vk {
+  background-image: url("../images/footer-socials-1.svg");
+}
+.telegram {
+  background-image: url("../images/footer-socials-2.svg");
+}
+.youtube {
+  background-image: url("../images/footer-socials-3.svg");
+}
+
+.footer-contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  color:#000;
+  text-align: center;
+  text-decoration: none;
+}
