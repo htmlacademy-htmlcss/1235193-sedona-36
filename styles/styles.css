@@ -13,23 +13,55 @@
 	src: url("../fonts/ptsans-700.woff2") format("woff2");
 	font-display: swap;
 }
+html {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
 	margin: 0;
-	font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
 	font-size: 18px;
 	line-height: 21px;
 	color: #333;
-	background-color: #fff;
+	background-color: #F2F2F2;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .page-header {
+  display: flex;
 	color: #000;
 	background: #fff;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+
+.nav {
+  display: flex;
+  flex-grow: 1;
 }
 
 .nav-list {
 	list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-user {
+  margin-left: auto;
 }
 
 .nav-link {
@@ -67,8 +99,13 @@ body {
 	background-color: #756157;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-logo {
 	display: inline-block;
+  vertical-align: middle;
 }
 
 .div-main-logo {
@@ -87,13 +124,16 @@ body {
 }
 
 .hero-container {
-	margin-bottom: 21px;
-	padding-top: 69px;
-	padding-bottom: 69px;
+  margin-bottom: 21px;
+	padding: 69px 274.5px;
 }
 
 .hero-list {
-	list-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hero-title {
@@ -115,6 +155,11 @@ body {
 .hero-item {
   background-color: #82B3D3;
   color: #fff;
+  width: 400px;
+}
+
+.hero-image {
+  width: 800px;
 }
 
 .item-default {
@@ -133,6 +178,8 @@ body {
 	line-height: 28px;
 	text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .hero-item p {
@@ -140,10 +187,15 @@ body {
 	font-size: 18px;
 	line-height: 21px;
   text-align: center;
+  margin: 0;
 }
 
 .hero-list-image {
 	display: block;
+}
+
+.advices-container {
+  padding: 64px 247.5px;
 }
 
 .advices-title {
@@ -153,6 +205,8 @@ body {
 	text-transform: uppercase;
 	color: #000;
 	text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .advices-descr {
@@ -161,16 +215,22 @@ body {
 	line-height: 26px;
 	color: #333;
 	text-align: center;
+  margin: 0;
 }
 
 .advices-list {
 	list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .advices-item {
 	text-align: center;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
+  padding: 183px 81px 85px;
+  width: 400px;
 }
 
 .housing {
@@ -190,6 +250,8 @@ body {
 	font-size: 24px;
 	line-height: 28px;
 	text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advices-item p {
@@ -197,10 +259,12 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 	color: #333;
+  margin: 0;
 }
 
 .offer {
 	text-align: center;
+  padding: 96px 304px;
 }
 
 .offer-title {
@@ -209,6 +273,8 @@ body {
 	line-height: 36px;
 	color: #000;
 	text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .offer-descr {
@@ -216,6 +282,8 @@ body {
 	font-size: 22px;
 	line-height: 26px;
 	color: #333;
+  margin: 0;
+  margin-bottom: 62px;
 }
 
 .subscribe {
@@ -243,6 +311,11 @@ body {
 	line-height: 26px;
 	color: #fff;
 	margin-bottom: 54px;
+}
+.page-footer {
+  display: flex;
+  padding: 45px 70.1px 35px 81.67px;
+  justify-content: space-between;
 }
 
 .footer-list {
