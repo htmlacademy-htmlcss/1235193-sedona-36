@@ -11,7 +11,7 @@
     <div class="page-container">
       <header class="page-header">
          <a class="header-logo-link" href="index.html">
-         <img class="header-logo-icon" src="images/logo-icon.svg" width="140" height="70,05" alt="Логотип шапки">
+         <img class="header-logo-icon" src="images/logo-icon.svg" width="140" height="70" alt="Логотип шапки">
          </a>
          <nav class="nav">
             <ul class="nav-list">
@@ -26,10 +26,10 @@
                </li>
             </ul>
             <ul class="nav-list nav-user">
-               <li class="nav-item">
+               <li class="nav-item nav-user-item">
                   <a class="nav-link search" href="#"><span class="visually-hidden">Поиск</span></a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item nav-user-item">
                   <a class="nav-link like" href="#"><span class="visually-hidden">Лайк</span></a>
                </li>
                <li class="nav-item">
@@ -42,7 +42,8 @@
          <h1 class="visually-hidden">Город Седона</h1>
          <div class="div-main-logo">
             <img class="main-logo" src="images/index-hero-logo-svg.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-         </div>
+            <div class="main-logo-stairs"></div>
+          </div>
          <section class="hero">
           <div class="hero-container">
             <h2 class="hero-title">Седона — небольшой городок в Аризоне,
@@ -51,26 +52,26 @@
             <p class="hero-descr">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
             <ul class="hero-list">
-               <li class="hero-item">
+               <li class="hero-item hero-point">
                   <h3 class="hero-list-title">Настоящий городок</h3>
                   <p class="hero-list-descr">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                </li>
                <li class="hero-item hero-image">
                   <img class="hero-list-image" src="images/index-gallery-1.jpg" width="800" height="384" alt="Фото городка">
                </li>
-               <li class="hero-item item-opacity">
+               <li class="hero-item item-opacity hero-point">
                   <h3 class="hero-list-title">Небольшая
                      площадь
                   </h3>
                   <p class="hero-list-descr">Все достопримечательности находятся очень близко</p>
                </li>
-               <li class="hero-item item-default">
+               <li class="hero-item item-default hero-point">
                   <h3 class="hero-list-title">Красивая
                      дорога
                   </h3>
                   <p class="hero-list-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                </li>
-               <li class="hero-item item-opacity">
+               <li class="hero-item item-opacity hero-point">
                   <h3 class="hero-list-title">Мало
                      туристов
                   </h3>
@@ -79,7 +80,7 @@
                <li class="hero-item hero-image">
                   <img class="hero-list-image" src="images/index-gallery-2.jpg" width="800" height="385" alt="Фото пейзажа">
                </li>
-               <li class="hero-item">
+               <li class="hero-item hero-point">
                   <h3 class="hero-list-title">Там есть
                      мост дьявола
                   </h3>
@@ -120,8 +121,8 @@
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-descr">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="http://echo.htmlacademy.com" method="post">
-               <label>
-               <input type="email" name="email" placeholder="email@example.com">
+               <label class="offer-label">
+               <input type="email" name="email" placeholder="Ваш email">
                </label>
                <button class="button button-blue" type="submit">Подписаться</button>
             </form>
@@ -149,7 +150,7 @@
             <a class="footer-contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
          </address>
          <a class="footer-copywright" href="https://htmlacademy.ru/">
-         <img class="footer-icon" src="images/footer-copywright.svg" width="114,9" height="32,9" alt="Подпись html-академии">
+         <img class="footer-icon" src="images/footer-copywright.svg" width="114" height="32" alt="Подпись html-академии">
          </a>
       </footer>
     </div>
