@@ -13,6 +13,7 @@
 	src: url("../fonts/ptsans-700.woff2") format("woff2");
 	font-display: swap;
 }
+
 html {
   height: 100%;
 }
@@ -32,6 +33,17 @@ body {
 	background-color: #F2F2F2;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+  }
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -49,6 +61,9 @@ body {
   margin: 0 auto;
 }
 
+.header-logo-link {
+  margin-right: 44px;
+}
 
 .nav {
   display: flex;
@@ -59,9 +74,31 @@ body {
 	list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
+
+.nav-item:not(:last-child) {
+  margin-right: 32px;
+}
+
 .nav-user {
   margin-left: auto;
+}
+
+.nav-user .nav-user-item {
+  width: 44px;
+  margin-right: 0;
+}
+
+.nav-user .nav-user-item:nth-child(2) {
+  margin-right: 20px;
+}
+
+.search, .like {
+  display: inline-block;
+  width: 44px;
+  height: 64px;
 }
 
 .nav-link {
@@ -74,17 +111,15 @@ body {
 }
 
 .search {
-	background-image: url("../images/header-nav-search.svg");
+  background-image: url("../images/header-nav-search.svg");
 	background-repeat: no-repeat;
-	background-position: left center;
-	padding-left: 20px;
+	background-position: center center;
 }
 
 .like {
 	background-image: url("../images/header-nav-like.svg");
 	background-repeat: no-repeat;
-	background-position: left center;
-	padding-left: 20px;
+	background-position: center center;
 }
 
 .button {
@@ -99,6 +134,12 @@ body {
 	background-color: #756157;
 }
 
+.button-blue {
+  border: none;
+  padding: 8px 50px;
+  background-color: #82B3D3;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -110,12 +151,18 @@ body {
 
 .div-main-logo {
   padding-top: 51.4px;
-	padding-bottom: 82.23px;
 	background-image: url("../images/index-hero-background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-color: #333;
   text-align: center;
+}
+
+.main-logo-stairs {
+  min-height: 60px;
+  background-image: url("../images/stairs.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .hero {
@@ -156,6 +203,10 @@ body {
   background-color: #82B3D3;
   color: #fff;
   width: 400px;
+}
+
+.hero-point {
+  padding: 102px 85px;
 }
 
 .hero-image {
@@ -228,7 +279,7 @@ body {
 .advices-item {
 	text-align: center;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: 161px 80px;
   padding: 183px 81px 85px;
   width: 400px;
 }
@@ -291,8 +342,7 @@ body {
 	background-image: url("../images/index-subscribe.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	padding-top: 96px;
-	padding-bottom: 104px;
+	padding: 96px 258px 104px;
 	text-align: center;
 }
 
@@ -302,7 +352,8 @@ body {
 	line-height: 36px;
 	color: #fff;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-descr {
@@ -310,8 +361,24 @@ body {
 	font-size: 22px;
 	line-height: 26px;
 	color: #fff;
+  margin: 0;
 	margin-bottom: 54px;
 }
+
+.subscribe-form {
+  display: flex;
+}
+
+.offer-label {
+  display: flex;
+  border: none;
+}
+
+.offer-label input {
+  width: 452px;
+  padding-left: 20px;
+}
+
 .page-footer {
   display: flex;
   padding: 45px 70.1px 35px 81.67px;
@@ -320,11 +387,21 @@ body {
 
 .footer-list {
 	list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-social-item {
+  width: 47.33px;
 }
 
 .footer-social-link {
+  display: inline-block;
+  width: 47.33px;
+  min-height: 40px;
 	background-repeat: no-repeat;
-	background-position: left;
+  background-position: center;
 }
 
 .vk {
