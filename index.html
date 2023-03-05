@@ -40,9 +40,10 @@
                            <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z" fill="black"/>
                         </svg>
                         <span class="visually-hidden">Лайк</span>
+                        <span class="count">12</span>
                      </a>
                   </li>
-                  <li class="nav-user">
+                  <li class="nav-user-button">
                      <a class="button" href="#">Хочу сюда!</a>
                   </li>
                </ul>
@@ -66,7 +67,7 @@
                      <p class="hero-list-descr hero-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                   </li>
                   <li class="hero-item hero-image">
-                     <img class="hero-list-image" src="images/index-gallery-1.jpg" width="800" height="385" alt="Фото городка">
+                     <img class="hero-list-image" src="images/index-gallery-1.jpg" width="800" height="390" alt="Фото городка">
                   </li>
                   <li class="hero-item item-opacity hero-point">
                      <h3 class="hero-list-title">Небольшая
@@ -173,6 +174,73 @@
                </svg>
             </a>
          </footer>
+         <div class="modal-container modal-container-close">
+          <div class="modal modal-auth">
+            <button class="modal-close-button">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817 7.49057L0.490479 13.1983L1.78279 14.4906L7.49048 8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z" fill="black"/>
+                </svg>
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <section class="modal-content">
+              <h2 class="modal-title">Поиск гостиниц в Седоне</h2>
+              <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group arrival">
+                  <label  class="auth-form-label arrival-label">Дата Заезда:
+                  <input class="auth-form-field long-input" type="text" name="auth-arrival" placeholder="Укажите дату">
+                </label>
+                 <span class="error">Мы не можем отправить вас в прошлое.</span>
+                </p>
+                <p class="field-group departure">
+                  <label class="auth-form-label departure-label">Дата Выезда:
+                  <input class="auth-form-field long-input" type="text" name="auth-departure" placeholder="Укажите дату">
+                </label>
+                 <span>На эти даты есть свободные номера. Пока есть.</span>
+                </p>
+                <p class="field-group-descr adult">
+                  <label class="auth-form-label label-adult" for="adult-count">Взрослые:</label>
+                  <button class="count-button count-left">
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                  </button>
+                  <input class="auth-form-field field" type="number" id="adult-count" name="auth-adult-count" value="2" min="1">
+                  <button class="count-button count-right">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                  </button>
+                </p>
+                <p class="field-group-descr children">
+                  <span class="form-label">
+                  <label class="auth-form-label label-children" for="children-count">Дети:</label>
+                  <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                      </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                  </span>
+                  </span>
+                  <button class="count-button count-left">
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                  </button>
+                  <input class="auth-form-field field" type="number" id="children-count" name="auth-children-count" value="2" min="0">
+                  <button class="count-button count-right">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </p>
+                <button class="button button-blue button-grid" type="submit">Найти</button>
+              </form>
+            </section>
+          </div>
+         </div>
       </div>
    </body>
 </html>
