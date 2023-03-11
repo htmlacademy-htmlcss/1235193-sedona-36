@@ -78,8 +78,8 @@ img {
 
 .nav {
 	display: flex;
-	flex-grow: 1;
-	padding: 9px 0;
+  flex-grow: 1;
+	padding: 3px 0;
 }
 
 .nav-list {
@@ -88,6 +88,7 @@ img {
 	margin-left: 184px;
 	padding: 0;
 	display: flex;
+  flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -100,12 +101,13 @@ img {
 	margin: 0;
 	padding: 12px 0;
 	display: flex;
+  flex-wrap: wrap;
 	align-items: center;
 	margin-left: auto;
 }
 
 .nav-user-item {
-	width: 44px;
+	min-width: 44px;
 	margin-right: 0;
 }
 
@@ -133,11 +135,13 @@ img {
 }
 
 .search {
+  min-width: 40px;
 	margin-left: 13px;
 }
 
 
 .like {
+  min-width: 40px;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -165,14 +169,21 @@ img {
 	background-color: #7DB54F;
 	border: 1px solid #7DB54F;
 	border-radius: 50%;
+  overflow: hidden;
 }
 
-.search:hover svg path {
+.search:hover svg {
 	fill: rgba(0, 0, 0, 0.3);
 }
 
-.like:hover svg path {
+.like:hover svg {
 	fill: rgba(0, 0, 0, 0.3);
+}
+
+.nav-user-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 
@@ -301,7 +312,6 @@ img {
 	background-color: #82B3D3;
 	color: #fff;
 	width: 400px;
-	position: relative;
 }
 
 .hero-point {
@@ -359,24 +369,28 @@ img {
 	margin: 0;
 }
 
-.hero-light::after {
+.hero-list-descr {
+  position: relative;
+}
+
+.hero-light::before {
 	content: "";
 	width: 60px;
 	height: 2px;
 	background-color: rgba(255, 255, 255, 0.3);
 	position: absolute;
-	bottom: 195px;
-	right: 170px;
+	top: -30px;
+	right: 85px;
 }
 
-.hero-dark::after {
+.hero-dark::before {
 	content: "";
 	width: 60px;
 	height: 2px;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.3);
-	bottom: 184px;
-	right: 170px;
+	top: -30px;
+	right: 83px;
 }
 
 .hero-list-image {
@@ -566,6 +580,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+  min-width: 144px;
 }
 
 .footer-social-item {
@@ -577,6 +592,7 @@ img {
 	padding: 14px 9px;
 	width: 48px;
 	min-height: 40px;
+  color: #83B3D3;
 }
 
 .vk,
@@ -586,16 +602,16 @@ img {
 	text-align: center;
 }
 
-.footer-social-link:hover svg path {
-	fill: #68A2CA;
+.footer-social-link:hover {
+	color: #68A2CA;
 }
 
-.footer-social-link:focus svg path {
-	fill: #68A2CA;
+.footer-social-link:focus {
+	color: #68A2CA;
 }
 
-.footer-social-link:active svg path {
-	fill: rgba(104, 162, 202, 0.3);
+.footer-social-link:active {
+	color: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts-phone {
@@ -625,15 +641,15 @@ img {
 	text-align: center;
 }
 
-.footer-copywright:hover svg path {
+.footer-copywright:hover svg {
 	fill: #756157;
 }
 
-.footer-copywright:focus svg path {
+.footer-copywright:focus svg {
 	fill: #756157;
 }
 
-.footer-copywright:active svg path {
+.footer-copywright:active svg {
 	fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -690,7 +706,7 @@ img {
 	border-color: #E6E6E6;
 }
 
-.modal-close-button:active svg path {
+.modal-close-button:active svg {
 	fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -756,7 +772,7 @@ img {
 	border: 3px solid #000;
 }
 
-.input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 }
@@ -812,47 +828,43 @@ input::-webkit-inner-spin-button {
 .count-left {
 	border-radius: 4px 0 0 4px;
   cursor: pointer;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .count-right {
 	border-radius: 0 4px 4px 0;
   cursor: pointer;
+  color: rgba(117, 97, 87, 0.3);
 }
 
-.count-left:hover svg path {
-	fill: #000;
-}
-
-.count-left:focus svg path {
-	fill: #000;
+.count-left:hover {
+	color: #000;
 }
 
 .count-left:focus {
 	border: 3px solid #82B3D3;
 	outline: none;
 	border-radius: 10px;
+  color: #000;
 }
 
-.count-left:active svg path {
-	fill: #756157;
+.count-left:active {
+	color: #756157;
 }
 
-.count-right:hover svg path {
-	fill: #000;
-}
-
-.count-right:focus svg path {
-	fill: #000;
+.count-right:hover {
+	color: #000;
 }
 
 .count-right:focus {
 	border: 3px solid #82B3D3;
 	outline: none;
 	border-radius: 10px;
+  color: #000;
 }
 
-.count-right:active svg path {
-	fill: #756157;
+.count-right:active {
+	color: #756157;
 }
 
 .field {
@@ -865,6 +877,11 @@ input::-webkit-inner-spin-button {
 	padding-left: 8px;
 	background-color: #F2F2F2;
   font-family: inherit;
+  color:#000;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 
@@ -884,7 +901,6 @@ input::-webkit-inner-spin-button {
 	line-height: 24px;
 	border-radius: 10px;
 }
-
 
 .button-grid:focus {
 	outline: none;
