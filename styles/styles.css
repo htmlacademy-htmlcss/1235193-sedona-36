@@ -33,12 +33,6 @@ body {
 	background-color: #F2F2F2;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-	object-fit: contain;
-}
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -76,6 +70,12 @@ img {
 	position: absolute;
 }
 
+.header-logo-icon {
+  max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
 .nav {
 	display: flex;
   flex-grow: 1;
@@ -109,6 +109,7 @@ img {
 .nav-user-item {
 	min-width: 44px;
 	margin-right: 0;
+  display: flex;
 }
 
 .nav-user-item:nth-child(2) {
@@ -124,7 +125,7 @@ img {
 	text-decoration: none;
 }
 
-.nav-link:hover::after {
+.main-nav-link::after {
 	content: "";
 	width: 100%;
 	height: 100%;
@@ -135,13 +136,14 @@ img {
 }
 
 .search {
-  min-width: 40px;
-	margin-left: 13px;
+  padding: 5px;
+  padding-left: 11px;
 }
 
 
 .like {
-  min-width: 40px;
+  padding: 5px;
+  padding-left: 14px;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -155,7 +157,7 @@ img {
 
 .count {
 	position: absolute;
-	bottom: 10px;
+	bottom: 15px;
 	left: 20px;
 	display: block;
 	width: 20px;
@@ -253,6 +255,9 @@ img {
 .main-logo {
 	display: inline-block;
 	vertical-align: middle;
+  max-width: 100%;
+	height: auto;
+	object-fit: contain;
 }
 
 .div-main-logo {
@@ -382,6 +387,9 @@ img {
 	top: -30px;
 	right: 85px;
 }
+.hero-dark {
+  color:#333;
+}
 
 .hero-dark::before {
 	content: "";
@@ -404,7 +412,9 @@ img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
+  max-width: 100%;
+	height: auto;
+	object-fit: contain;
 }
 
 .advices-container {
@@ -581,6 +591,7 @@ img {
 	flex-wrap: wrap;
 	align-items: center;
   min-width: 144px;
+  max-width: 200px;
 }
 
 .footer-social-item {
@@ -823,6 +834,7 @@ input::-webkit-inner-spin-button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  background-color: #F2F2F2;
 }
 
 .count-left {
